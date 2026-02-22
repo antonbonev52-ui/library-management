@@ -1,0 +1,31 @@
+{% extends "core/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to the Library!</h1>
+    <p class="lead">Browse our collection of books and authors.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Books</h5>
+                    <p class="card-text">See all books in the library.</p>
+                    <a href="/books" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Authors</h5>
+                    <p class="card-text">Discover authors in our collection.</p>
+                    <a href="/authors" class="btn btn-primary">View Authors</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
